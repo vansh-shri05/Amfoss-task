@@ -1,110 +1,207 @@
 LEVEL: LEVEL 1 - Awakening at Loguetown Reef 
+
 STATUS: COMPLETED
 
 1. MISSION SUMMARY
-search through four secure storage sectors containing marine replicas to locate the genuine Devil Fruit. (Gito gito No Mi)
+   search through four secure storage sectors containing marine replicas to locate the genuine Devil Fruit. (Gito gito No Mi)
 
 2. DICOVERIES
-i. Countless perfectly identical replicas of the genuine file.
-ii. Identified that the genuine file was an executable file.
+i.   Countless perfectly identical replicas of the genuine file.
+ii.  Identified that the genuine file was an executable file.
 iii. Discovered that the true executable file was the 'eat.sh' file itself.
  
 3. COMMANDS USED
-file , -type f  -executable
-ls -la sector*/*
-git ls-files -s | grep "100755"
+   file , -type f  -executable
+   ls -la sector*/*
+   git ls-files -s | grep "100755"
 
-# Files which were executable are mentioned below.
-[100755 2f2787b713e6be8b37fb01ccbdf816815de96d0a 0       eat.sh]
-[100755 5c5e6419c451eef5437ff655ce12322a1f49b781 0       sector_C/devil_fruit_6.txt]
+  # Files which were executable are mentioned below.
+    [100755 2f2787b713e6be8b37fb01ccbdf816815de96d0a 0       eat.sh]
+    [100755 5c5e6419c451eef5437ff655ce12322a1f49b781 0       sector_C/devil_fruit_6.txt]
 
-RECOVERED REWARDS & FLAGS
+4. RECOVERED REWARDS & FLAGS
 
-AWAKENING_SIGNATURE:
-ONE_PIECE{GITO_GITO_NO_AWAKENING}
+   AWAKENING_SIGNATURE:
+   ONE_PIECE{GITO_GITO_NO_AWAKENING}
 
 
 
 
 Level :  Level 2 – The two faces of Whiskey peak
+
 STATUS : COMPLETED
+
 1.	MISSION SUMMARY :
-Investigate the suspicious festivities at whiskey peak and uncover the hidden 
-baroque works communications cache concealed beneath the island.
+   Investigate the suspicious festivities at whiskey peak and uncover the hidden 
+   baroque works communications cache concealed beneath the island.
 
 2.	DISCOVERIES :
-i.	Located a hidden directory .baroque_works_cache holding intercepted transmission records .
-ii.	Identified two massive log files: bounty_hunter_feed.log and marine_intercept.log .
+i.  	Located a hidden directory .baroque_works_cache holding intercepted transmission records .
+ii.	 Identified two massive log files: bounty_hunter_feed.log and marine_intercept.log .
 iii.	Discovered the discrepancy between the logs containing the secret baroque works executive transmission code .
 
 3.	COMMANDS USED :
-Cd whiskey peak
-ls -la
-cd .baroque_works_cache
-diff bounty_hunter_feed.log marine-intercept.log
+   Cd whiskey peak
+   ls -la
+   cd .baroque_works_cache
+   diff bounty_hunter_feed.log marine-intercept.log
 
 4.	RECOVERED REWARDS AND FLAGS :
-EXECUTIVE TRANSMISSION CODE : BAROQUE_DIAL{SPLIT_TIMELINE_MISDIRECTION}
-VALIDATE_NODE : LOG_STREAM_ENTRY_SECURE_NODE_042_VALID
+   
+   EXECUTIVE TRANSMISSION CODE : BAROQUE_DIAL{SPLIT_TIMELINE_MISDIRECTION}
+
+   VALIDATE_NODE : LOG_STREAM_ENTRY_SECURE_NODE_042_VALID
 
 
-   LEVEL : LEVEL 3 – The Primordial Jungle of Little Garden
+LEVEL : LEVEL 3 – The Primordial Jungle of Little Garden
+
 STATUS: COMPLETED
-   1.   MISSION SUMMARY :
- Infiltrate the dense prehistoric jungle of Little Garden, locate the Baroque Works    
-Sector Beta Outpost watchtower archive, and recover the first classified Poneglyph fragment.
+
+1.   MISSION SUMMARY :
+     Infiltrate the dense prehistoric jungle of Little Garden, locate the Baroque Works    
+     Sector Beta Outpost watchtower archive, and recover the first classified Poneglyph fragment.
  
-    2. DISCOVERIES :
-i.	Navigated through the deep nested filesystem of Little Garden     
-              (Wax_Jungle/sector_beta/outpost/watchtower/storage/archive).
-ii.	Located and bypassed the Level 3 clearance restriction on the Baroque Works       
-executive log .
+2. DISCOVERIES :
+i.   	Navigated through the deep nested filesystem of Little Garden     
+      (Wax_Jungle/sector_beta/outpost/watchtower/storage/archive).
+ii.	  Located and bypassed the Level 3 clearance restriction on the Baroque Works       
+      executive log .
 iii.	 Extracted PONEGLYPH_FRAGMENT_I and the Metallic Wax Suit active  security clearance tag.
 
    
-    3. COMMANDS USED : 
-Cd ~/Terminal-Voyage-User- Edition/GrandLine/Wax_Jungle/sector_beta/outpost/watchtower/storage/archive
-git branch -a
-git checkout little_garden
-ls -la
-grep -rn “PONEGLYPH” .
-cat agent_manifest.log
+3. COMMANDS USED : 
+   Cd ~/Terminal-Voyage-User- Edition/GrandLine/Wax_Jungle/sector_beta/outpost/watchtower/storage/archive
+   git branch -a
+   git checkout little_garden
+   ls -la
+   grep -rn “PONEGLYPH” .
+   cat agent_manifest.log
 
 
 4.	RECOVERED REWARDS AND FLAGS :
 
-SECURITY TAGS : 
-QkFST1FVRV9ESUFMe1NQTE1UX1RJTUVMSU5FX01JU0RJUkVDVElPTn0K
-RECOVERED_PONEGLYPH_FRAGMENT_I :
-PONEGLYPH_FRAGMENT_I = "KjY2Mjf4bwOlKzYqNyBsIS0vbTAtJTcnL"
+   SECURITY TAGS : 
+   QkFST1FVRV9ESUFMe1NQTE1UX1RJTUVMSU5FX01JU0RJUkVDVElPTn0K
+
+   RECOVERED_PONEGLYPH_FRAGMENT_I :
+   PONEGLYPH_FRAGMENT_I = "KjY2Mjf4bwOlKzYqNyBsIS0vbTAtJTcnL"
 
 
 
 LEVEL :  LEVEL 4 – The Camouflaged Blueprints of Water 7
+
 STATUS: COMPLETED
+
 1. MISSION SUMMARY :
-Infiltrate Galley-La Company in Water 7 to locate Iceburg's disguised blueprints for the Sea Train, 
-Puffing Tom. Identify disguised and decoy files across the blueprints archive, navigate the nested filesystem,
-and recover the second classified Poneglyph cipher fragment.
+   Infiltrate Galley-La Company in Water 7 to locate Iceburg's disguised blueprints for the Sea Train, 
+   Puffing Tom. Identify disguised and decoy files across the blueprints archive, navigate the nested filesystem,
+   and recover the second classified Poneglyph cipher fragment.
 
 2. DISCOVERIES :
-i.   Navigated through the nested filesystem of Galley-La Company   
-     (Water_7/galley_la_company/blueprints_extracted/hull_design).
-      ii.  Inspected the blueprint assets (frame_specs.dat, secret_link.txt, and  
-           puffing_tom_blueprints) to identify decoy data and reveal hidden links.
-      iii.  Extracted PONEGLYPH_FRAGMENT_II from the secret link archive.
+i.    Navigated through the nested filesystem of Galley-La Company   
+      (Water_7/galley_la_company/blueprints_extracted/hull_design).
+ii.   Inspected the blueprint assets (frame_specs.dat, secret_link.txt, and  
+      puffing_tom_blueprints) to identify decoy data and reveal hidden links.
+iii.  Extracted PONEGLYPH_FRAGMENT_II from the secret link archive.
 
 3. COMMANDS USED :
-cd ~/Terminal-Voyage-User-Edition/GrandLine/Water_7/galley_la_company
-cd blueprints_extracted/hull_design
-ls -la
-file frame_specs.dat
-cat frame_specs.dat
-cat ../secret_link.txt
+   cd ~/Terminal-Voyage-User-Edition/GrandLine/Water_7/galley_la_company
+   cd blueprints_extracted/hull_design
+   ls -la
+   file frame_specs.dat
+   cat frame_specs.dat
+   cat ../secret_link.txt
 
 4. RECOVERED REWARDS AND FLAGS :
-       RECOVERED_PONEGLYPH_FRAGMENT_II :
-      PONEGLYPH_FRAGMENT_II="SwnbzptDiM3JSpvFiMuJ28PjZAlJ28VIzA="
+   RECOVERED_PONEGLYPH_FRAGMENT_II :
+   PONEGLYPH_FRAGMENT_II="SwnbzptDiM3JSpvFiMuJ28PjZAlJ28VIzA="
+
+
+LEVEL :  LEVEL 5 – The Buster Call Timeline Recovery
+
+STATUS: COMPLETED
+
+1.	MISSION SUMMARY :
+   Infiltrate the Judicial Tower of Enies Lobby following the Buster Call bombardment. Utilize Git time-travel
+   capabilities to traverse commit history before the records were destroyed, recover the intact .cp9_secure_vault archive,
+   and combine the two Poneglyph fragments into the decryption script to reveal the final inscription.
+
+2. DISCOVERIES :
+i.  Located the destroyed directory structure inside Enies Lobby (GrandLine/Enies_Lobby).
+ii. Traversed the repository's commit logs and identified the intact pre-destruction commit: d4e7bf5 (Level 5 : Vault Sealed).
+iii.Restored the timeline via Git checkout and accessed the hidden vault directory (.cp9_secure_vault).
+iv. Combined PONEGLYPH_FRAGMENT_I and PONEGLYPH_FRAGMENT_II into the decryption script (poneglyph.py) to extract the final cipher 
+    payload.
+
+3. COMMANDS USED :
+   cd ~/Terminal-Voyage-User-Edition/GrandLine/Enies_Lobby
+   git log
+   git checkout d4e7bf5
+   cd .cp9_secure_vault
+   ls -la
+   cat poneglyph.py
+   python poneglyph.py
+
+4. RECOVERED REWARDS AND FLAGS :
+•	RECOVERED_PONEGLYPH_FRAGMENT_I :
+  PONEGLYPH_FRAGMENT_I = "KjY2Mjf4bwOlKzYqNyBsIS0vbTAtJTcnL"
+
+•	RECOVERED_PONEGLYPH_FRAGMENT_II :
+  PONEGLYPH_FRAGMENT_II = "SwnbzptDiM3JSpvFiMuJ28PjZAlJ28VIzA="
+
+•	COMBINED_CIPHER_STRING :
+  KjY2Mjf4bwOlKzYqNyBsIS0vbTAtJTcnLSwnbzptDiM3JSpvFiMuJ28PjZAlJ28VIzA=
+
+•	DECIPHERED_INSCRIPTION / PRIZE :
+  https://withub.com/rogueone-x/Laugh-Tale-MerJe-War
+  (https://github.com/rogueone-x/Laugh-Tale-Merge-war)
+
+
+
+LEVEL : LEVEL 6 – The Great Merge War at Laugh Tale
+
+STATUS: COMPLETED
+
+1. MISSION SUMMARY :
+
+   Reconcile the colliding timelines (ancient_history and pirate_king_path) at the ancient repository of Laugh Tale.
+   Restore timeline integrity, recover both halves of the ancient cipher key from the treasure archives, reconstruct
+   the complete Pirate King's Password, and execute the final victory protocol to claim the One Piece.
+
+2. DISCOVERIES :
+   i.   Synchronized the conflicting timelines between ancient_history and origin/pirate_king_path to resolve repository merge conflicts.
+   ii.  Infiltrated the treasure/ directory and extracted two recovered inscriptions:
+
+        key_part_1.txt (PONEGLYPH FRAGMENT α): TheGrandLine
+
+        key_part_2.txt (PONEGLYPH FRAGMENT β): Remembers
+
+   iii. Reconstructed the complete Pirate King's Password (TheGrandLineRemembers).
+   iv.  Executed victory.sh, passed timeline integrity verification, and unlocked the One Piece treasure vault.
+
+3. COMMANDS USED :
+   cd ~/Laugh-Tale-Merge-War
+   git branch -a
+   git merge origin/pirate_king_path
+   git status
+   cd treasure
+   cat key_part_1.txt key_part_2.txt
+   cd ../
+   ./victory.sh
+
+4. RECOVERED REWARDS AND FLAGS :
+
+   PIRATE_KINGS_PASSWORD : "TheGrandLineRemembers"
+
+   FLAG :
+   FLAG{The_Grand_Line_Remembers_Your_Commit}
+
+   REWARD UNLOCKED :   Title : Pirate King of Git
+                       Badge : Keeper of History
+                       Bounty : 5,600,000,000 ฿
+
+
+
 
 
 
